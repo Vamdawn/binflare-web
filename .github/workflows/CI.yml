@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup Node
-        use: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with: '12'
 
       # Runs a single command using the runners shell

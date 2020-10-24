@@ -51,5 +51,5 @@ jobs:
           chmod 700 "$SSH_PATH"
           chmod 600 "$SSH_PATH/known_hosts"
           chmod 600 "$SSH_PATH/id_rsa"
-          ssh-keyscan -t rsa $HOST >> "$SSH_PATH/known_hosts"
+          ssh-keyscan -t rsa $REMOTE_HOST >> "$SSH_PATH/known_hosts"
           scp $ARGS SOURCE $REMOTE_USER@$REMOTE_HOST:$TARGET

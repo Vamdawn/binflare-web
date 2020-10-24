@@ -24,7 +24,8 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v1
-        with: '12'
+        with:
+          node-version: '12'
 
       # Runs a single command using the runners shell
       - name: Install Dependencies

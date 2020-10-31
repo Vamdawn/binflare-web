@@ -2,8 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
 import "./plugins/element.js";
-
-import HelloWorld from "./components/HelloWorld";
+import routes from "./routes"
 
 Vue.config.productionTip = false;
 
@@ -14,13 +13,7 @@ const router = new VueRouter({
   base: __dirname,
   saveScrollPosition: true,
   suppressTransitionError: true,
-  routes: [
-    {
-      path: "/hello/:msg",
-      component: HelloWorld,
-      props: true,
-    },
-  ],
+  routes
 });
 
 new Vue({
